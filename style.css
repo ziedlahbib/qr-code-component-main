@@ -1,0 +1,44 @@
+body {
+    background-color: #f0fdf4;
+}
+
+.qrcontainer {
+    background-color: white;
+    border-radius: 0 10% 0 0;
+    height: 700px;
+    width: 900px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: visible; /* Ensures the image can extend beyond the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Optional: Adjust padding if needed */
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 20%; /* Centers horizontally relative to .qrcontainer */
+    top: -50px; /* Positions the image half inside and half outside the container */
+    transform: translateX(-50%); /* Corrects the horizontal position */
+}
+.image2{
+    height: 400px;
+}
+.title {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin if necessary */
+}
+
+.paragraphe {
+    text-align: center;
+    width: 670px; /* Ensure this width is suitable */
+    font-size: 20px;
+}
