@@ -1,24 +1,79 @@
+/* General Styles */
 body {
     background-color: #f0fdf4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center;     /* Centers the container vertically */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .qrcontainer {
     background-color: white;
     border-radius: 0 10% 0 0;
     height: 700px;
-    width: 900px;
+    width: 50%;
     position: fixed;
     bottom: 0;
     left: 0;
-    overflow: visible; /* Ensures the image can extend beyond the container */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    padding: 20px; /* Optional: Adjust padding if needed */
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: visible;
 }
 
-.image {
+.content {
+    background-color: #f0fdf4;
+    width: 50%;
+    margin-left: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragraph1, .paragraph2 {
+    display: flex;
+    flex-direction: row; /* Places the image and text side by side */
+    align-items: flex-start; /* Aligns the items to the top */
+    padding-left: 20px; /* Adjust this value to control the start position */
+    margin: 50px 0; /* Adds space above and below the paragraph section */
+}
+
+.title1, .title2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px; /* Adds space between the title and paragraph */
+}
+
+.paragraphe3, .paragraphe4 {
+    margin-right: 20px; /* Adds space between the paragraph and the image */
+    max-width: 70%; /* Ensures the paragraph doesn't take up too much space */
+}
+
+.paragraph1 image, .paragraph2 image {
+    width: 100px; /* Adjust the size of the image */
+    height: auto;
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+.image{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.image1{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -26,19 +81,13 @@ body {
     top: -50px; /* Positions the image half inside and half outside the container */
     transform: translateX(-50%); /* Corrects the horizontal position */
 }
-.image2{
-    height: 400px;
+.title-container {
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: row; /* Aligns items in a row (horizontally) */
+    align-items: center; /* Vertically centers the icon with the text */
+    margin-bottom: 10px; /* Adds space below the title */
 }
-.title {
-    color: #2563eb;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 20px; /* Adjust margin if necessary */
-}
-
-.paragraphe {
-    text-align: center;
-    width: 670px; /* Ensure this width is suitable */
-    font-size: 20px;
+.icon {
+    width: 20px; /* Adjusts the size of the icon */
+    height: auto;
 }
